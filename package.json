@@ -1,0 +1,27 @@
+{
+  "name": "anotherchat",
+  "version": "1.0.0",
+  "description": "study project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalytalyzin/AnotherChat.git"
+  },
+  "author": "Vitaly Talyzin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalytalyzin/AnotherChat/issues"
+  },
+  "homepage": "https://github.com/vitalytalyzin/AnotherChat#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
