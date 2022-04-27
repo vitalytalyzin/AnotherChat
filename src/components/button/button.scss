@@ -1,0 +1,13 @@
+.submit-button {
+  display: flex;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  color: #0066FF;
+
+  &.primary {
+    background: #0066FF none;
+    border-radius: 8px;
+    color: #FFF;
+  }
+}

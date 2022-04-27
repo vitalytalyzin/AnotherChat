@@ -1,0 +1,20 @@
+extends ../../layout/layout.pug
+
+block styles
+  link(rel='stylesheet' href='login.scss')
+
+block content
+  +authWrapper('Вход')
+    block authContent
+      form.login-form
+        .login-form__input
+          +input('text', 'Логин')
+        .login-form__input
+          +input('password', 'Пароль')
+        .login-form__buttons
+          .button__item
+            +button('Авторизоваться', '../main/main.pug')(class='primary')
+          .button__item
+            +button('Нет аккаунта?', '../registration/registration.pug')
+
+

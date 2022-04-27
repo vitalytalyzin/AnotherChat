@@ -1,0 +1,51 @@
+extends ../../layout/layout.pug
+
+block styles
+  link(rel='stylesheet' href='registration.scss')
+
+block content
+  -
+    const inputs = [
+      {
+        type: 'email',
+        label: 'Почта',
+      },
+      {
+        type: 'text',
+        label: 'Логин',
+      },
+      {
+        type: 'text',
+        label: 'Имя',
+      },
+      {
+        type: 'text',
+        label: 'Фамилия',
+      },
+      {
+        type: 'text',
+        label: 'Телефон',
+      },
+      {
+        type: 'password',
+        label: 'Пароль',
+      },
+      {
+        type: 'password',
+        label: 'Пароль (еще раз)',
+      },
+    ];
+
+  +authWrapper('Регистрация')
+    block authContent
+      form.registration-form
+        each input in inputs
+          .registration-form__input
+            +input(input.type, input.label)
+        .registration-form__buttons
+          .button__item
+            +button('Зарегестрироваться', '../errorPage/errorPage.pug')(class='primary')
+          .button__item
+            +button('Войти', '../main/main.pug')
+
+

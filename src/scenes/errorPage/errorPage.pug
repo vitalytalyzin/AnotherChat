@@ -1,0 +1,10 @@
+extends ../../layout/layout
+
+block styles
+  link(rel='stylesheet' href='errorPage.scss')
+
+block content
+  .error-page__wrapper
+    .error-page__message-wrapper
+     +errorMessage('404', 'Не туда попали')
+    +button('Назад к чатам', '../main/main.pug')

@@ -1,0 +1,24 @@
+.main__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main__chats-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 30%;
+  min-width: 300px;
+  height: 100%;
+  border-right: 1px solid #BBBBBB;
+}
+
+.main__chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
+  height: 100%;
+}

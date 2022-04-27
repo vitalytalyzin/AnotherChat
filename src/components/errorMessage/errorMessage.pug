@@ -1,0 +1,6 @@
+mixin errorMessage(code, text)
+  .error-message__wrapper
+    .error-message__code-title= code
+    .error-message__title= text
+    if block
+    block

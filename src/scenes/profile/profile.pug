@@ -1,0 +1,15 @@
+extends ../../layout/layout.pug
+
+block styles
+  link(rel='stylesheet' href='profile.scss')
+
+-
+  const profileData = [
+    {
+      type: 'form-control'
+    }
+  ];
+
+block content
+  +avatar('https://picsum.photos/100', 'John')
+  +input('form-control', 'Почта', 'Почта')

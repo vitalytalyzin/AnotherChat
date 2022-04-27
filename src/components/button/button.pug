@@ -1,0 +1,5 @@
+mixin button(text, href)
+  a(href= href).submit-button&attributes(attributes)= text
+  // input(type="submit", value= text).submit-button
+  if block
+    block
